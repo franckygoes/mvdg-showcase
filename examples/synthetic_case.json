@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "case_id": "MVDG-DEMO-001",
+  "nature": "synthetic",
+  "documents": [
+    {"id": "DOC-01", "type": "bon_de_commande", "quantity": 12, "date": "2026-10-01"},
+    {"id": "DOC-02", "type": "bon_de_livraison", "quantity": 10, "date": "2026-10-03"},
+    {"id": "DOC-03", "type": "facture", "quantity": 12, "date": "2026-10-04"}
+  ],
+  "findings": [
+    {
+      "id": "F-001",
+      "check": "document_presence",
+      "status": "PASS",
+      "evidence": ["DOC-01", "DOC-02", "DOC-03"],
+      "statement": "Les trois types de documents attendus sont présents."
+    },
+    {
+      "id": "F-002",
+      "check": "quantity_coherence",
+      "status": "FAIL",
+      "evidence": ["DOC-01", "DOC-02"],
+      "statement": "La quantité livrée est inférieure de deux unités à la quantité commandée."
+    },
+    {
+      "id": "F-003",
+      "check": "invoice_support",
+      "status": "REVIEW",
+      "evidence": ["DOC-02", "DOC-03"],
+      "statement": "La facture porte sur douze unités alors que la livraison en atteste dix ; une validation humaine est requise."
+    }
+  ],
+  "decision": "HUMAN_REVIEW",
+  "publication_note": "Exemple fictif sans lien avec une personne, une entreprise ou une mission réelle."
+}

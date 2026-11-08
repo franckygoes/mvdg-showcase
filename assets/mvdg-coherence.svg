@@ -1,0 +1,46 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgmv" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#f2f0e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dceeff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#bgmv)"/>
+  
+  <!-- Document source -->
+  <rect x="80" y="100" width="90" height="140" rx="4" fill="#d9d5c9" stroke="#66747a" stroke-width="2"/>
+  <line x1="90" y1="120" x2="160" y2="120" stroke="#66747a" stroke-width="1"/>
+  <line x1="90" y1="135" x2="160" y2="135" stroke="#66747a" stroke-width="1"/>
+  <line x1="90" y1="150" x2="150" y2="150" stroke="#66747a" stroke-width="1"/>
+  <text x="125" y="185" font-family="IBM Plex Sans, Arial" font-size="10" text-anchor="middle" fill="#66747a">Corpus</text>
+  
+  <!-- Analyse -->
+  <circle cx="300" cy="170" r="50" fill="none" stroke="#135eab" stroke-width="2"/>
+  <path d="M 280 160 Q 300 170 280 180" stroke="#135eab" stroke-width="1"/>
+  <path d="M 320 160 Q 300 170 320 180" stroke="#135eab" stroke-width="1"/>
+  <text x="300" y="175" font-family="IBM Plex Sans, Arial" font-size="10" text-anchor="middle" fill="#135eab">Audit</text>
+  
+  <!-- Flèche -->
+  <path d="M 170 170 Q 220 170 250 170" stroke="#39a8ff" stroke-width="3" fill="none"/>
+  <polygon points="260,170 250,165 250,175" fill="#39a8ff"/>
+  
+  <!-- Résultats -->
+  <g>
+    <rect x="420" y="80" width="120" height="80" rx="4" fill="none" stroke="#081a33" stroke-width="1.5"/>
+    <text x="480" y="100" font-family="IBM Plex Sans, Arial" font-size="11" font-weight="600" text-anchor="middle" fill="#081a33">Écarts</text>
+    <text x="480" y="120" font-family="IBM Plex Sans, Arial" font-size="9" text-anchor="middle" fill="#66747a">identifiés</text>
+  </g>
+  
+  <g>
+    <rect x="420" y="180" width="120" height="80" rx="4" fill="none" stroke="#081a33" stroke-width="1.5"/>
+    <text x="480" y="200" font-family="IBM Plex Sans, Arial" font-size="11" font-weight="600" text-anchor="middle" fill="#081a33">Risques</text>
+    <text x="480" y="220" font-family="IBM Plex Sans, Arial" font-size="9" text-anchor="middle" fill="#66747a">qualifiés</text>
+  </g>
+  
+  <!-- Traçabilité -->
+  <path d="M 540 200 L 620 200" stroke="#135eab" stroke-width="2" opacity="0.6"/>
+  <text x="650" y="205" font-family="IBM Plex Sans, Arial" font-size="11" fill="#135eab">Tracé</text>
+  
+  <!-- Texte -->
+  <text x="400" y="410" font-family="IBM Plex Sans, Arial" font-size="24" font-weight="600" text-anchor="middle" fill="#081a33">Rigueur documentaire</text>
+</svg>

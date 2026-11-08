@@ -1,0 +1,19 @@
+{
+  "showcase_version": "1.0.0",
+  "method": "MVDG",
+  "status": "PUBLIC_SAFE_CANDIDATE",
+  "public_metrics": {
+    "source_files_reviewed": 9,
+    "controlled_reports": 9,
+    "documented_corrections": 3,
+    "exact_third_party_matches": "7/9"
+  },
+  "boundary": {
+    "client_files": false,
+    "personal_data": false,
+    "individual_reports": false,
+    "operational_matrices": false,
+    "synthetic_example_only": true
+  },
+  "license_selected": false
+}
